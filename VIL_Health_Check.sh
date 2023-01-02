@@ -22,3 +22,4 @@ for i in `ls -1rt ${log}/*.csv`
 do
 sshpass -p "admin@123" rsync --remove-source-files -av -e "ssh" ${log}/$i root@10.164.7.50:${REMOTE_DIR}/
 done
+#This is the Script for VIL Server health Check for Pending files on any of the path
