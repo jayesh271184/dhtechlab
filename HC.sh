@@ -19,3 +19,4 @@ do
                                   fi
                           done
 rsync  -av -e "ssh" $log/${hostname}_*_${DAY}_HC.csv root@10.164.7.50:${REMOTE_DIR}/
+##This is created by Jayesh Shah##
