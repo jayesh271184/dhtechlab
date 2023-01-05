@@ -1,4 +1,4 @@
-BASE_DIR="/opt/"
+BASE_DIR="/"
 TOTAL_FILES=0
 MAX_ALLOWED_FILES=1
 for file in `find $BASE_DIR -type d|grep -v STAT|grep -v ARCH|grep -v arch|grep -v DNS`
