@@ -1,4 +1,5 @@
 #!/bin/bash/
+#Updated by jayesh
 P1="/tmp/input/"
 P2="/tmp/input1/"
 P3="/tmp/USG_ARCH/"
