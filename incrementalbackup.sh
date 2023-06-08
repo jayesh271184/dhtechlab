@@ -1,0 +1,12 @@
+export ORACLE_SID=zainwifi
+export ORACLE_HOME=/u01/app11g/oracle/product/11.2.0/db_1
+export PATH=$ORACLE_HOME/bin:$PATH
+export DATE=`date '+%m%d%y_%H%M%S'`
+
+rman target /  << EOF
+run {
+ALLOCATE CHANNEL CH1 DEVICE TYPE DISK;
+ALLOCATE CHANNEL CH2 DEVICE TYPE DISK;
+BACKUP INCREMENTAL LEVEL 1 DATABASE tag ZAIN_INCREMENTAL${DATE};
+}
+exit

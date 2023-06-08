@@ -39,7 +39,7 @@ echo "           "
 echo "           "
 echo "           "
 echo -e "${BL} Server PROCESS STATUS  for  : `hostname` ${N}"
-pro=`ps h -Lu root | wc -l`
+pro=`ps h -Lu crestel | wc -l`
 
 if [ $pro -le 12000 ];then
 echo -e "${SK} `hostname` ${N}:: ${SK}Number Of Processes ${N}-->${G} $pro${N}"

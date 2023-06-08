@@ -9,4 +9,4 @@ zcat $i|grep -v ",53,"|gzip > $Dest/NoDNS_$i
 mv $i $arch/
 done
 #gzip $Dest/*.csv
-#Created By jayesh Shah
+

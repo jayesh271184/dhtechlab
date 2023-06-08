@@ -1,5 +1,4 @@
 #!/bin/bash/
-#Updated by jayesh
 P1="/tmp/input/"
 P2="/tmp/input1/"
 P3="/tmp/USG_ARCH/"
@@ -22,4 +21,4 @@ mv ${file} ${P3}
 fi
 done
 done
-#This is changes made on AWS Instance 
+
