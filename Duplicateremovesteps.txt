@@ -1,0 +1,12 @@
+Connect to instance prod-dataload-scheduler (AWS account: placeable (726584805687)) using SSM
+sudo su - dataload
+cd /opt/dataload/cibc-advisor-workbench/input
+zip ~/backups/cibc-advisor-workbench/`date +"%Y%m%d_%H%M"`.zip ./*
+cat toWorkbench_advisor.csv | cut -d ',' -f 1 | tr -d '"' | sort | uniq -c | grep "[2-9][[:space:]]"
+This should return the duplicated ID (e.g : 2 RJ757ALB) where RJ757ALB is the duplicated ID.
+grep -n $DUPLICATED_ID toWorkbench_advisor.csv
+Keep the line that has the most data and erase the duplicates or the empty lines
+
+
+grep -n $DUPLICATED_ID fromWorkbench_advisor.csv
+Do the same for the file fromWorkbench.csv (The line numbers should match with toWorkbench.csv)
