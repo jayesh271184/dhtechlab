@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "Updated the code today 10:22 PM"
+
 for i in `df -kh  | awk '{ print $6 }' | grep "u01\|LVFMDUSAGEDATA" `
 do
 TOTAL_FILES=0
