@@ -1,5 +1,5 @@
 echo -e ""
-. /u01/scripts/color.cr
+
 THRESHOLD=70
 CC=`df -P|grep "/"|awk  '{print$6,"-->>",$5}'|sed 's/%//g'|wc -l`
 #echo -e "\n"
